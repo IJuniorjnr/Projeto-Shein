@@ -3,7 +3,7 @@ var duration1
 var interval1 
 
 function start1(){
-  duration1 = 10
+  duration1 = 610
   interval1 = setInterval(countdown1, 1000)
   document.querySelector('#zona1').style.backgroundColor = "green";
 }
