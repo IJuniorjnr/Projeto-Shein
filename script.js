@@ -4,15 +4,32 @@ const tempo1 = document.getElementById('display1');
 const startBtn = document.querySelector('.btn-start1');
 const resetBtn = document.querySelector('.btn-reset1');
 
-let seconds1 = 10 ;
-let iTime1 = 10;
+let seconds1 = 1800 ;
+let iTime1 = 1800;
 let interval1 = null;
 
 // Event listeners
-
 startBtn.addEventListener('click', start1);
 resetBtn.addEventListener('click', reset1);
 
+function trc1(){
+  let t = confirm('Quer mesmo trocar de página?');
+  if (t == true){
+    true
+  }
+  else{
+    t.preventDefault();
+  }
+}
+function trc2(){
+  let t1 = confirm('Quer mesmo trocar de página?');
+  if (t1 == true){
+    t1 = true
+  }
+  else{
+    t1.preventDefault();
+  }
+}
 // Contador
 
 function countdown1 (){
@@ -55,10 +72,16 @@ function start1(){
 }
 
 function reset1(){
-  clearInterval(interval1);
-  interval1 = null;
-  tempo1.innerText = '00:00'
-  document.getElementById('zona1').style.backgroundColor= "gray";
+  let confirma1 = confirm('Confirmar a troca!')
+  if(confirma1 == true){
+    clearInterval(interval1);
+    interval1 = null;
+    tempo1.innerText = '00:00'
+    document.getElementById('zona1').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 
 
@@ -69,8 +92,8 @@ const tempo2 = document.getElementById('display2');
 const startBtn2 = document.querySelector('.btn-start2');
 const resetBtn2 = document.querySelector('.btn-reset2');
 
-let seconds2 = 10 ;
-let iTime2 = 10;
+let seconds2 = 1800 ;
+let iTime2 = 1800;
 let interval2 = null;
 
 // Event listeners
@@ -120,10 +143,16 @@ function start2(){
 }
 
 function reset2(){
-  clearInterval(interval2);
-  interval2 = null;
-  tempo2.innerText = '00:00'
-  document.getElementById('zona2').style.backgroundColor= "gray";
+  let confirma2 = confirm('Confirmar a troca!')
+  if(confirma2 == true){
+    clearInterval(interval2);
+    interval2 = null;
+    tempo2.innerText = '00:00'
+    document.getElementById('zona2').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 
 //FIM ZONA 2
@@ -133,8 +162,8 @@ const tempo3 = document.getElementById('display3');
 const startBtn3 = document.querySelector('.btn-start3');
 const resetBtn3 = document.querySelector('.btn-reset3');
 
-let seconds3 = 10 ;
-let iTime3 = 10;
+let seconds3 = 1800 ;
+let iTime3 = 1800;
 let interval3 = null;
 
 // Event listeners
@@ -184,10 +213,16 @@ function start3(){
 }
 
 function reset3(){
-  clearInterval(interval3);
-  interval3 = null;
-  tempo3.innerText = '00:00'
-  document.getElementById('zona3').style.backgroundColor= "gray";
+  let confirma3 = confirm('Confirmar a troca!')
+  if(confirma3 == true){
+    clearInterval(interval3);
+    interval3 = null;
+    tempo3.innerText = '00:00'
+    document.getElementById('zona3').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 
 //FIM ZONA 3
@@ -197,8 +232,8 @@ const tempo4 = document.getElementById('display4');
 const startBtn4 = document.querySelector('.btn-start4');
 const resetBtn4 = document.querySelector('.btn-reset4');
 
-let seconds4 = 10 ;
-let iTime4 = 10;
+let seconds4 = 1800 ;
+let iTime4 = 1800;
 let interval4 = null;
 
 // Event listeners
@@ -248,10 +283,16 @@ function start4(){
 }
 
 function reset4(){
-  clearInterval(interval4);
-  interval4 = null;
-  tempo4.innerText = '00:00'
-  document.getElementById('zona4').style.backgroundColor= "gray";
+  let confirma4 = confirm('Confirmar a troca!')
+  if(confirma4 == true){
+    clearInterval(interval4);
+    interval4 = null;
+    tempo4.innerText = '00:00'
+    document.getElementById('zona4').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 //FIM ZONA 4
 
@@ -260,8 +301,8 @@ const tempo5 = document.getElementById('display5');
 const startBtn5 = document.querySelector('.btn-start5');
 const resetBtn5 = document.querySelector('.btn-reset5');
 
-let seconds5 = 10 ;
-let iTime5 = 10;
+let seconds5 = 1800 ;
+let iTime5 = 1800;
 let interval5 = null;
 
 // Event listeners
@@ -311,10 +352,16 @@ function start5(){
 }
 
 function reset5(){
-  clearInterval(interval5);
-  interval5 = null;
-  tempo5.innerText = '00:00'
-  document.getElementById('zona5').style.backgroundColor= "gray";
+  let confirma5 = confirm('Confirmar a troca!')
+  if(confirma5 == true){
+    clearInterval(interval5);
+    interval5 = null;
+    tempo5.innerText = '00:00'
+    document.getElementById('zona5').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 
 //FIM ZONA 5
@@ -324,8 +371,8 @@ const tempo6 = document.getElementById('display6');
 const startBtn6 = document.querySelector('.btn-start6');
 const resetBtn6 = document.querySelector('.btn-reset6');
 
-let seconds6 = 10 ;
-let iTime6 = 10;
+let seconds6 = 1800 ;
+let iTime6 = 1800;
 let interval6 = null;
 
 // Event listeners
@@ -375,10 +422,16 @@ function start6(){
 }
 
 function reset6(){
-  clearInterval(interval6);
-  interval6 = null;
-  tempo6.innerText = '00:00'
-  document.getElementById('zona6').style.backgroundColor= "gray";
+  let confirma6 = confirm('Confirmar a troca!')
+  if(confirma6 == true){
+    clearInterval(interval6);
+    interval6 = null;
+    tempo6.innerText = '00:00'
+    document.getElementById('zona6').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 //FIM ZONA 6
 
@@ -387,8 +440,8 @@ const tempo7 = document.getElementById('display7');
 const startBtn7 = document.querySelector('.btn-start7');
 const resetBtn7 = document.querySelector('.btn-reset7');
 
-let seconds7 = 10 ;
-let iTime7 = 10;
+let seconds7 = 1800 ;
+let iTime7 = 1800;
 let interval7 = null;
 
 // Event listeners
@@ -438,10 +491,16 @@ function start7(){
 }
 
 function reset7(){
-  clearInterval(interval7);
-  interval7 = null;
-  tempo7.innerText = '00:00'
-  document.getElementById('zona7').style.backgroundColor= "gray";
+  let confirma7 = confirm('Confirmar a troca!')
+  if(confirma7 == true){
+    clearInterval(interval7);
+    interval7 = null;
+    tempo7.innerText = '00:00'
+    document.getElementById('zona7').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONA 7
 
@@ -450,8 +509,8 @@ const tempo8 = document.getElementById('display8');
 const startBtn8 = document.querySelector('.btn-start8');
 const resetBtn8 = document.querySelector('.btn-reset8');
 
-let seconds8 = 10 ;
-let iTime8 = 10;
+let seconds8 = 1800 ;
+let iTime8 = 1800;
 let interval8 = null;
 
 // Event listeners
@@ -501,10 +560,16 @@ function start8(){
 }
 
 function reset8(){
-  clearInterval(interval8);
-  interval8 = null;
-  tempo8.innerText = '00:00'
-  document.getElementById('zona8').style.backgroundColor= "gray";
+  let confirma8 = confirm('Confirmar a troca!')
+  if(confirma8 == true){
+    clearInterval(interval8);
+    interval8 = null;
+    tempo8.innerText = '00:00'
+    document.getElementById('zona8').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 
 //FIM ZONA 8
@@ -514,8 +579,8 @@ const tempo9 = document.getElementById('display9');
 const startBtn9 = document.querySelector('.btn-start9');
 const resetBtn9 = document.querySelector('.btn-reset9');
 
-let seconds9 = 10 ;
-let iTime9 = 10;
+let seconds9 = 1800 ;
+let iTime9 = 1800;
 let interval9 = null;
 
 // Event listeners
@@ -565,10 +630,16 @@ function start9(){
 }
 
 function reset9(){
-  clearInterval(interval9);
-  interval9 = null;
-  tempo9.innerText = '00:00'
-  document.getElementById('zona9').style.backgroundColor= "gray";
+  let confirma9 = confirm('Confirmar a troca!')
+  if(confirma9 == true){
+    clearInterval(interval9);
+    interval9 = null;
+    tempo9.innerText = '00:00'
+    document.getElementById('zona9').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONA 9
 
@@ -577,8 +648,8 @@ const tempo10 = document.getElementById('display10');
 const startBtn10 = document.querySelector('.btn-start10');
 const resetBtn10 = document.querySelector('.btn-reset10');
 
-let seconds10 = 10 ;
-let iTime10 = 10;
+let seconds10 = 1800 ;
+let iTime10 = 1800;
 let interval10 = null;
 
 // Event listeners
@@ -628,10 +699,16 @@ function start10(){
 }
 
 function reset10(){
-  clearInterval(interval10);
-  interval10 = null;
-  tempo10.innerText = '00:00'
-  document.getElementById('zona10').style.backgroundColor= "gray";
+  let confirma10 = confirm('Confirmar a troca!')
+  if(confirma10 == true){
+    clearInterval(interval10);
+    interval10 = null;
+    tempo10.innerText = '00:00'
+    document.getElementById('zona10').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 //FIM ZONA 10
 
@@ -641,8 +718,8 @@ const tempo11 = document.getElementById('display11');
 const startBtn11 = document.querySelector('.btn-start11');
 const resetBtn11 = document.querySelector('.btn-reset11');
 
-let seconds11 = 10 ;
-let iTime11 = 10;
+let seconds11 = 1800 ;
+let iTime11 = 1800;
 let interval11 = null;
 
 // Event listeners
@@ -692,10 +769,16 @@ function start11(){
 }
 
 function reset11(){
-  clearInterval(interval11);
-  interval11 = null;
-  tempo11.innerText = '00:00'
-  document.getElementById('zona11').style.backgroundColor= "gray";
+  let confirma11 = confirm('Confirmar a troca!')
+  if(confirma11 == true){
+    clearInterval(interval11);
+    interval11 = null;
+    tempo11.innerText = '00:00'
+    document.getElementById('zona11').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 //FIM ZONA 11
 
@@ -704,8 +787,8 @@ const tempo12 = document.getElementById('display12');
 const startBtn12 = document.querySelector('.btn-start12');
 const resetBtn12 = document.querySelector('.btn-reset12');
 
-let seconds12 = 10 ;
-let iTime12 = 10;
+let seconds12 = 1800 ;
+let iTime12 = 1800;
 let interval12 = null;
 
 // Event listeners
@@ -755,10 +838,16 @@ function start12(){
 }
 
 function reset12(){
-  clearInterval(interval12);
-  interval12 = null;
-  tempo12.innerText = '00:00'
-  document.getElementById('zona12').style.backgroundColor= "gray";
+  let confirma12 = confirm('Confirmar a troca!')
+  if(confirma12 == true){
+    clearInterval(interval12);
+    interval12 = null;
+    tempo12.innerText = '00:00'
+    document.getElementById('zona12').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 //FIM ZONA 12
 
@@ -767,8 +856,8 @@ const tempo13 = document.getElementById('display13');
 const startBtn13 = document.querySelector('.btn-start13');
 const resetBtn13 = document.querySelector('.btn-reset13');
 
-let seconds13 = 10 ;
-let iTime13 = 10;
+let seconds13 = 1800 ;
+let iTime13 = 1800;
 let interval13 = null;
 
 // Event listeners
@@ -818,10 +907,16 @@ function start13(){
 }
 
 function reset13(){
-  clearInterval(interval13);
-  interval13 = null;
-  tempo13.innerText = '00:00'
-  document.getElementById('zona13').style.backgroundColor= "gray";
+  let confirma13 = confirm('Confirmar a troca!')
+  if(confirma13 == true){
+    clearInterval(interval13);
+    interval13 = null;
+    tempo13.innerText = '00:00'
+    document.getElementById('zona13').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONA 13
 
@@ -830,8 +925,8 @@ const tempo14 = document.getElementById('display14');
 const startBtn14 = document.querySelector('.btn-start14');
 const resetBtn14 = document.querySelector('.btn-reset14');
 
-let seconds14 = 10 ;
-let iTime14 = 10;
+let seconds14 = 1800 ;
+let iTime14 = 1800;
 let interval14 = null;
 
 // Event listeners
@@ -881,10 +976,16 @@ function start14(){
 }
 
 function reset14(){
-  clearInterval(interval14);
-  interval14 = null;
-  tempo14.innerText = '00:00'
-  document.getElementById('zona14').style.backgroundColor= "gray";
+  let confirma14 = confirm('Confirmar a troca!')
+  if(confirma14 == true){
+    clearInterval(interval14);
+    interval14 = null;
+    tempo14.innerText = '00:00'
+    document.getElementById('zona14').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONA 14
 
@@ -893,8 +994,8 @@ const tempo15 = document.getElementById('display15');
 const startBtn15 = document.querySelector('.btn-start15');
 const resetBtn15 = document.querySelector('.btn-reset15');
 
-let seconds15 = 10 ;
-let iTime15 = 10;
+let seconds15 = 1800 ;
+let iTime15 = 1800;
 let interval15 = null;
 
 // Event listeners
@@ -944,10 +1045,16 @@ function start15(){
 }
 
 function reset15(){
-  clearInterval(interval15);
-  interval15 = null;
-  tempo15.innerText = '00:00'
-  document.getElementById('zona15').style.backgroundColor= "gray";
+  let confirma15 = confirm('Confirmar a troca!')
+  if(confirma15 == true){
+    clearInterval(interval15);
+    interval15 = null;
+    tempo15.innerText = '00:00'
+    document.getElementById('zona15').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONA 15
 
@@ -956,8 +1063,8 @@ const tempo16 = document.getElementById('display16');
 const startBtn16 = document.querySelector('.btn-start16');
 const resetBtn16 = document.querySelector('.btn-reset16');
 
-let seconds16 = 10 ;
-let iTime16 = 10;
+let seconds16 = 1800 ;
+let iTime16 = 1800;
 let interval16 = null;
 
 // Event listeners
@@ -1007,10 +1114,16 @@ function start16(){
 }
 
 function reset16(){
-  clearInterval(interval16);
-  interval16 = null;
-  tempo16.innerText = '00:00'
-  document.getElementById('zona16').style.backgroundColor= "gray";
+  let confirma16 = confirm('Confirmar a troca!')
+  if(confirma16 == true){
+    clearInterval(interval16);
+    interval16 = null;
+    tempo16.innerText = '00:00'
+    document.getElementById('zona16').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONQ 16
 
@@ -1019,8 +1132,8 @@ const tempo17 = document.getElementById('display17');
 const startBtn17 = document.querySelector('.btn-start17');
 const resetBtn17 = document.querySelector('.btn-reset17');
 
-let seconds17 = 10 ;
-let iTime17 = 10;
+let seconds17 = 1800 ;
+let iTime17 = 1800;
 let interval17 = null;
 
 // Event listeners
@@ -1070,10 +1183,16 @@ function start17(){
 }
 
 function reset17(){
-  clearInterval(interval17);
-  interval17 = null;
-  tempo17.innerText = '00:00'
-  document.getElementById('zona17').style.backgroundColor= "gray";
+  let confirma17 = confirm('Confirmar a troca!')
+  if(confirma17 == true){
+    clearInterval(interval17);
+    interval17 = null;
+    tempo17.innerText = '00:00'
+    document.getElementById('zona17').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONA 17
 
@@ -1082,8 +1201,8 @@ const tempo18 = document.getElementById('display18');
 const startBtn18 = document.querySelector('.btn-start18');
 const resetBtn18 = document.querySelector('.btn-reset18');
 
-let seconds18 = 10 ;
-let iTime18 = 10;
+let seconds18 = 1800 ;
+let iTime18 = 1800;
 let interval18 = null;
 
 // Event listeners
@@ -1133,10 +1252,16 @@ function start18(){
 }
 
 function reset18(){
-  clearInterval(interval18);
-  interval18 = null;
-  tempo18.innerText = '00:00'
-  document.getElementById('zona18').style.backgroundColor= "gray";
+  let confirma18 = confirm('Confirmar a troca!')
+  if(confirma18 == true){
+    clearInterval(interval18);
+    interval18 = null;
+    tempo18.innerText = '00:00'
+    document.getElementById('zona18').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONA 18
 
@@ -1145,8 +1270,8 @@ const tempo19 = document.getElementById('display19');
 const startBtn19 = document.querySelector('.btn-start19');
 const resetBtn19 = document.querySelector('.btn-reset19');
 
-let seconds19 = 10 ;
-let iTime19 = 10;
+let seconds19 = 1800 ;
+let iTime19 = 1800;
 let interval19 = null;
 
 // Event listeners
@@ -1196,10 +1321,16 @@ function start19(){
 }
 
 function reset19(){
-  clearInterval(interval19);
-  interval19 = null;
-  tempo19.innerText = '00:00'
-  document.getElementById('zona19').style.backgroundColor= "gray";
+  let confirma19 = confirm('Confirmar a troca!')
+  if(confirma19 == true){
+    clearInterval(interval19);
+    interval19 = null;
+    tempo19.innerText = '00:00'
+    document.getElementById('zona19').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 //FIM ZONA 19
 
@@ -1208,8 +1339,8 @@ const tempo20 = document.getElementById('display20');
 const startBtn20 = document.querySelector('.btn-start20');
 const resetBtn20 = document.querySelector('.btn-reset20');
 
-let seconds20 = 10 ;
-let iTime20 = 10;
+let seconds20 = 1800 ;
+let iTime20 = 1800;
 let interval20 = null;
 
 // Event listeners
@@ -1259,9 +1390,84 @@ function start20(){
 }
 
 function reset20(){
-  clearInterval(interval20);
-  interval20 = null;
-  tempo20.innerText = '00:00'
-  document.getElementById('zona20').style.backgroundColor= "gray";
+  let confirma20 = confirm('Confirmar a troca!')
+  if(confirma20 == true){
+    clearInterval(interval20);
+    interval20 = null;
+    tempo20.innerText = '00:00'
+    document.getElementById('zona20').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
 }
 // FIM ZONA 20
+
+// INICIO ZONA 21
+const tempo21 = document.getElementById('display21');
+const startBtn21 = document.querySelector('.btn-start21');
+const resetBtn21 = document.querySelector('.btn-reset21');
+
+let seconds21 = 10 ;
+let iTime21 = 10;
+let interval21 = null;
+
+// Event listeners
+
+startBtn21.addEventListener('click', start21);
+resetBtn21.addEventListener('click', reset21);
+
+// Contador
+
+function countdown21 (){
+  seconds21 --
+
+  //formatação do tempo
+  let mins21 = Math.floor( seconds21 / 60)
+  let secs21 = seconds21 % 60
+  
+  if (secs21 < 10) secs21 = '0' + secs21;
+  if (mins21 < 10) mins21 = '0' + mins21;
+
+  tempo21.innerText = `${mins21}:${secs21}`;
+
+  if(seconds21 > 600){
+    document.getElementById('zona21').style.backgroundColor = "green";
+  }
+
+  if(seconds21 < 600){
+    document.querySelector('#zona21').style.backgroundColor = "yellow";
+  }
+
+  if(seconds21 < 0){
+    document.getElementById('sound').play();
+    document.getElementById('zona21').style.backgroundColor = "red";
+    tempo21.innerText = 'Troque a gaiola!'
+    
+    clearInterval(interval21);
+  }
+}
+
+function start21(){
+  if (interval21){
+    return
+  }
+  interval21 = setInterval(countdown21,1000)
+  seconds21 = iTime21
+  document.getElementById('soundc').play();
+
+}
+
+function reset21(){
+  let confirma21 = confirm('Confirmar a troca!')
+  if(confirma21 == true){
+    clearInterval(interval21);
+    interval21 = null;
+    tempo21.innerText = '00:00'
+    document.getElementById('zona21').style.backgroundColor= "gray";
+  }
+  else{
+    return
+  }
+}
+//FIM ZONA 21
